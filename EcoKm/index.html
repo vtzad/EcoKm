@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gasto de Combustível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Beneficios</a></li>
+                <li><a href="/planos/planos.html">Planos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="login-area">
+                <form id="login-form">
+ 
+                    <a href="login/login.html" type="button">Login</a>
+                </form>
+                <div id="usuario-logado"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Calculadora de Gasto de Combustível</h1>
+            <form id="form-carro">
+                <label for="modelo-carro">Modelo do Carro:</label>
+                <select id="modelo-carro">
+                    <!-- Modelos de carros serão carregados dinamicamente -->
+                </select>
+
+                <label for="tipo-combustivel">Tipo de Combustível:</label>
+                <select id="tipo-combustivel">
+                    <option value="10">Gasolina</option>
+                    <option value="8">Etanol</option>
+                    <option value="15">GNV</option>
+                </select>
+
+                <label for="distancia">Distância (em km):</label>
+                <input type="number" id="distancia" required>
+
+                <label for="preco-combustivel">Preço do Combustível (R$):</label>
+                <input type="number" id="preco-combustivel" step="0.01" required>
+
+                <button type="button" onclick="calcularCombustivel()">Calcular</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

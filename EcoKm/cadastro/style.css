@@ -1,0 +1,177 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(3, 9, 44);
+}
+.topoPag{
+    text-align: center;
+}
+.iconeTopo{
+    size-adjust: 40%;
+}
+.txtTopo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.voltarLogin{
+    text-decoration:dotted;
+    font-weight: bold;
+    color:#0a9fc4;
+}
+/*comando site*/
+.telaCadastro{
+    display: flex;
+    align-items: fit-content;
+    justify-content: center;
+    height: 100vh;
+
+}
+.card{
+    background-color:hsl(0, 0, 15);
+    padding: 20px;
+    border-radius: 50px;
+    width: 350px;
+    height: 1330px;
+}
+.card-header{
+    padding-bottom: 0px;
+    opacity: 0.8;
+    color: #fff;
+    text-align: center;
+
+}
+#titulo{
+    font-size: 40px;
+}
+.conteudo label{
+    color:#fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.conteudo{
+    display:block;
+    margin-left: 60px;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+.inputs{
+    width: 200px;
+    height: 35px;
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: white;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    display:block;
+    font-size: 14px;
+}
+.inputs::placeholder{
+    text-transform: none;
+}
+.inputs#nome{
+    text-transform: capitalize;
+}
+.inputs#nomeMae{
+    text-transform: capitalize;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+}
+#enviar{
+    width: 74%;
+    height: 40px;
+    background-color: #0a9fc4;
+    border: none;
+    color: #e1e1e1;
+    text-align: center;
+    cursor: pointer;
+    position:sticky;
+}
+.rodape a {
+    background-color: #0a9fc4;
+    border: none;
+    height: 10px;
+    width: 180px;
+    text-align: center;
+    padding: 14px;
+    font-size: 14px;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-style: bold;
+    border-radius: 10px;
+}
+
+
+/*comando site*/
+.voltarHome{
+    color: white;
+    text-decoration: none; 
+    font-size: 14px;   
+}
+.homePage{
+    text-align: center;
+    width: 50px;
+    background-color: #0a9fc4;
+    border-radius: 10px;
+}
+input{
+    border-radius: 5px;
+    margin: 9px;
+}
+select{
+    margin-top: 8px;
+}
+form{
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+.estadoSP{
+    display:none;
+}
+.estadoRJ{
+    display:none;
+}
+.span-required{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: red;
+    display: none;
+    margin-left: 10px;
+    margin-top: -8px;
+    text-align: justify;
+    justify-content: right;
+    position: absolute;
+}
+@media screen and (max-width: 840px) {
+    .telaCadastro{
+        size-adjust: 100vh;
+        display: grid;
+        grid-template-columns: 2;
+    }
+    .inputs{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .card{
+        size-adjust: 100vh;
+        position: absolute;
+    }
+    .card-header{
+        size-adjust: 100vh;
+    }
+}

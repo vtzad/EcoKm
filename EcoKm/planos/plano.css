@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414; 
+    color: white;
+}
+
+header {
+    background-color: #4CAF50; 
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #ffb84d;
+}
+
+.login-area {
+    display: flex;
+    align-items: center;
+}
+
+.login-area button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-area button:hover {
+    background-color: #f0f0f0;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #141414;
+}
+
+.cabecalho h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-planos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.plano {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+    color: #fff;
+}
+
+.plano:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Destaque na borda */
+}
+
+.destaque:hover {
+    border: 2px solid #ffb84d;
+}
+
+.plano h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffb84d;
+}
+
+.plano ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.plano ul li {
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.botao {
+    background-color: #ffb84d;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #ff9f1a;
+}
