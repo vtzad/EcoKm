@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-Ua-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/EcoKm/cadastro/cadastro.css">
         <script src="script.js" defer></script>
         <title>Cadastre sua conta</title>
     </head>
@@ -56,7 +56,7 @@
                         <label for="nomeMae">Nome materno:</label>
                         <input class="inputs" type="text" name="nomeMae" id="nomeMae" placeholder="Digite o nome da sua mãe" oninput="nomeMaeValidate()">
                         <span class="span-required">Nome Materno deve ter no mínimo 15 caracteres.</span>
-                    </div>
+                    </div>  
                     <div class="cep">
                         <label for="cep">CEP:</label>
                         <input class="inputs" maxlength="9" type="text" name="cep" id="cep" placeholder="00000-000" oninput="cepValidate()">
@@ -94,16 +94,24 @@
                     </div>
                     <div class="sexo">
                         <label for="sexo">Sexo:</label>
-                        <input type="radio" name="sexo" id="sexoFem" value="Feminino" checked oninput="sexoValidate()">
+                        <select required class="sexos" id="sexos" onchange="sexoValidate()">
+                            <option hidden value="0">Selecione seu sexo:</option>
+                            <option value="Masculino" name="sexo" id="sexoMas" >Masculino</option>
+                            <option value="Feminino" name="sexo" id="sexoFem" >Feminino</option>
+                            <option value="Outro" name="sexo" id="sexoOut">Outro</option>
+                        </select>
+                        <span class="span-required">Por favor, selecione um sexo.</span>
+                        <!-- <input type="radio" name="sexo" id="sexoFem" value="Feminino" checked oninput="sexoValidate()">
                         <label for="sexoFem">Feminino</label>
                         <input type="radio" name="sexo" id="sexoMas" value="Masculino" oninput="sexoValidate()">
                         <label for="sexoMas">Masculino</label>
                         <input type="radio" name="sexo" id="sexoOut" value="Outro" oninput="sexoValidate()">
-                        <label for="sexoOut">Outro</label><br>
+                        <label for="sexoOut">Outro</label><br> -->
                     </div>
-                        <div class="rodape">
-                        <input type="submit" name="enviar" id="enviar" class="enviar">
-                    </div>
+                    <input class="limpar" type="reset" name="apagar" id="apagar" value="Apagar">
+                </div>
+                <div class="rodape">
+                    <button type="submit" name="enviar" id="enviar" class="enviar">Enviar</button>
                 </div>
                 </form>
         </div>

@@ -1,6 +1,7 @@
     const form = document.getElementById("form");
-    const campos = document.querySelectorAll('.conteudo input');
+    const campos = document.querySelectorAll('.conteudo input, .conteudo select');
     const spans = document.querySelectorAll('.span-required');
+    var selectElement = document.getElementById('sexos');
     // const cep = document.querySelector('#cep')
     // const bairro = document.querySelector('#bairro')
     // const cidade = document.querySelector('#cidade')
@@ -199,28 +200,23 @@
             return true;
         }
         else {
-            setError(13)
+            setError(13);
             return false;
         }
     }
     
+
     function sexoValidate() {
-        const radios = document.querySelectorAll('input[name="sexo"]');
-        let checked = false;
-        for (const radio of radios) {
-            if (radio.checked) {
-                checked = true;
-                break;
-            }
-        }
-        if (!checked) {
-            setError(14);
-            return false;
-        } else {
-            removeError(14);
-            return true;
-        }
-    }
+            // Check if the selected value is valid
+            if (selectElement.value === "0") {
+                // Show error message
+                setError(14)
+                return false;
+            } else {
+                // Hide error message and proceed
+                removeError(14)
+                return true;
+    }}
 // VALIDAÇÃO /\ //
 // MASCARAS \/ //
 
